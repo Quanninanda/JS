@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p onmouseover="mouseover()" id="demo">PVZ</p>
+<script>
+    var demo = document.getElementById("demo");
+    demo.addEventListener("mouseover",mouseover);
+    demo.addEventListener("mouseout",mouseout);
+
+    function mouseover()  {
+    document.getElementById("demo").style.color="red";
+    }
+    function mouseout()  {
+      document.getElementById("demo").style.color="blue";
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Select your age.</p>
+
+<select id="mySelect">
+    <option value="1">1</option>
+    <option value="2">2</option>
+</select>
+<script>
+    let selectedElement = document.getElementById("mySelect");
+    selectedElement.addEventListener("change"),changeFunction();
+    function changeFunction() {
+        var selectValue = document.getElementById("mySelect").value;
+        alert(selectValue);
+    }
+</script>
+</body>
+</html>

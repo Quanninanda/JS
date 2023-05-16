@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Select your age.</p>
+<select id="mySelect" onchange="do_something()">
+    <option value="1">1</option>
+    <option value="2">2</option>
+</select>
+<script>
+    function do_something() {
+        let selectedValue = document.getElementById("mySelect").value;
+        alert(selectedValue)
+    }
+</script>
+</body>
+</html>
+<!--
